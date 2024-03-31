@@ -90,8 +90,3 @@
 
     Müller, A. C., & Guido, S. (2016). Introduction to Machine Learning with Python: A Guide for Data Scientists. 
     O'Reilly Media.
-
----*Anexos*---
-
-    Código Fuente en GitHub: Enlace al Repositorio
-    Dataset en GitHub: Enlace al Dataset
