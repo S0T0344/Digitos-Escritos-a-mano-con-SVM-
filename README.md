@@ -51,6 +51,11 @@
     pip install numpy
     pip install pandas
 
+    Para instalar las librerías necesarias, ejecuta el siguiente comando en tu terminal:
+
+```bash
+pip install scikit-learn matplotlib
+
 ---*Metodología de Trabajo Utilizando SVM*---
 ---*El proceso de trabajo incluye:*---
 
