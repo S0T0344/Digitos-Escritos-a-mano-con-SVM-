@@ -48,11 +48,11 @@
     
     ```bash
     pip install scikit-learn
-    ```bash
+    bash
     pip install matplotlib
-    ```bash
+    bash
     pip install numpy
-    ```bash
+    bash
     pip install pandas
 
     Para instalar las librerías necesarias, ejecuta el siguiente comando en tu terminal:
