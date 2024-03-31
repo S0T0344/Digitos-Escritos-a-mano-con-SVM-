@@ -46,15 +46,15 @@
     Se recomienda utilizar un entorno virtual para gestionar las dependencias del proyecto. 
     Puedes instalar las librerías necesarias ejecutando los siguientes comandos en tu terminal:
     
-    ```bash
+    ---*
     pip install scikit-learn
-    bash
+    
     pip install matplotlib
-    bash
+    
     pip install numpy
-    bash
+    
     pip install pandas
-
+    *---
     Para instalar las librerías necesarias, ejecuta el siguiente comando en tu terminal:
 
 
