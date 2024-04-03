@@ -1,8 +1,14 @@
-from sklearn import datasets
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report
-import matplotlib.pyplot as plt
+"""
+Este script entrena un modelo de clasificación de dígitos escritos a mano utilizando el conjunto de datos de dígitos de sklearn.
+El modelo se entrena utilizando una búsqueda de hiperparámetros y validación cruzada.
+Finalmente, se visualizan las predicciones del modelo en un subconjunto de las imágenes de prueba.
+"""
+# Librerías utilizadas:
+import sklearn.datasets as datasets # Conjuntos de datos integrados y utilidades para cargar datos.
+from sklearn.model_selection import train_test_split, GridSearchCV # Funciones para dividir conjuntos de datos y validación cruzada.
+import sklearn.svm as svm # Implementación de Support Vector Machines (SVM) para clasificación.
+from sklearn.metrics import accuracy_score, classification_report # Métricas para evaluar el rendimiento de modelos.
+import matplotlib.pyplot as plt # Creación de visualizaciones gráficas.
 
 def cargar_datos():
     """
@@ -26,7 +32,7 @@ def entrenar_modelo(X_train, y_train):
         clf: El modelo SVM entrenado.
     """
     parametros = {'C': [1, 10, 100], 'gamma': [0.001, 0.01, 0.1]}
-    clf = GridSearchCV(SVC(random_state=42), parametros, cv=5)
+    clf = GridSearchCV(svm.SVC(random_state=42), parametros, cv=5)
     clf.fit(X_train, y_train)
     return clf
 
@@ -68,6 +74,9 @@ def visualizar_resultados(clf, digits, num_imagenes=10):
     plt.show()
 
 def main():
+    """
+    Función principal que carga los datos, entrena el modelo, evalúa su precisión y visualiza los resultados.
+    """
     # Cargar los datos
     digits = cargar_datos()
     X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.2, random_state=42)
