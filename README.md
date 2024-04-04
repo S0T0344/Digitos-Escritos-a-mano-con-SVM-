@@ -1,4 +1,9 @@
 
+- *Nombre:* Gustavo Soto Pecho
+- *Universidad:* Universidad Privada Domingo Savio
+- *Carrera:* Ingeniería de Sistemas
+- *Facebook:* [https://www.facebook.com/profile.php?id=100008869298483]
+  
 ---*Proyecto de Reconocimiento de Dígitos Escritos a Mano con SVM*---
 
     Este repositorio contiene el código y la documentación para un proyecto que implementa un sistema 
