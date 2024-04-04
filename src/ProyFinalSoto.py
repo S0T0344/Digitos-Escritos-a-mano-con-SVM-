@@ -1,7 +1,7 @@
 """
 Este script entrena un modelo de clasificación de dígitos escritos a mano utilizando el conjunto de datos de dígitos de sklearn.
 El modelo se entrena utilizando una búsqueda de hiperparámetros y validación cruzada.
-Finalmente, se visualizan las predicciones del modelo en un subconjunto de las imágenes de prueba.
+Finalmente, se visualizan las predicciones del modelo en un subconjunto de las imágenes de prueba.....
 """
 # Librerías utilizadas:
 import sklearn.datasets as datasets # Conjuntos de datos integrados y utilidades para cargar datos.
